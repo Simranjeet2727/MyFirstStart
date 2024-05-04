@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <Style>
+        .head{
+            text-align: center;
+            font-size: larger;
+
+        }
+        .contain {
+            text-align: left;
+            padding: 33px;
+            margin: 33px;
+            border: 2px solid grey;
+            border-radius: 2px;
+            width: 300px;
+        }
+        #container {
+            margin: auto;
+            width: 300px;
+        }
+    </Style>
+</head>
+
+<body>
+    <h2 class="head">This is HTML forms </h2>
+    <!-- form used to create form -->
+    <form action="backend.py" class="contain" id="container">
+        <!-- div is block element -->
+        <label for="name"> Name </label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="email"> Email </label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <label for="password"> Password </label>
+        <div>
+            <input type="password" name="myPass" id="password">
+        </div>
+        <br>
+        <label for="date"> DOB </label>
+        <div>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <label for="gender"> Gender </label>
+        <div>
+            Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <label for="car">Select option</label>
+        <div>
+            <select name="myCar" id="car">
+                <option value="Dstr">Duster</option>
+                <option value="xuv">XUV 500</option>
+                <option value=" " selected>Select</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Eligiblity</label>
+            <input type="checkbox" name="myCheckbox" id="eligible" checked>
+            <!-- checked used for  by defaul checked -->
+        </div>
+        <br>
+        <label for="feedback">Enter feedback</label>
+        <div>
+            <textarea name="myText" cols="30" rows="10" id="feedback"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin And Padding</title>
+    <style>
+        body{
+            background-color: #bb6478;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .Container{
+            background-color: beige;
+            border: 3px solid rgb(118, 238, 158);
+            /* margin: 25px; margin-left,right,top,bottom */
+            /* padding: 10px; padding-left,right,top,bottom */
+            /*padding: 10px 20px 30px 40px; padding/margin: top right bottom left; */
+            padding: 15px 30px; /* padding/margin: y(top/bottom) x(left/right) */
+            margin: 10px 20px;
+            border-radius: 23px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <h3>CSS Box Model, Margin And Padding head 1</h3>
+        <p id="FirstClass">This is first paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim ad dolorem consectetur earum asperiores distinctio est, omnis minus dolores totam quae sed odio sit numquam ducimus similique hic itaque.</p>
+    </div>
+
+    <div class="Container">
+        <h3>CSS Box Model, Margin And Padding head 2</h3>
+        <p id="SecondClass">This is first paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim ad dolorem consectetur earum asperiores distinctio est, omnis minus dolores totam quae sed odio sit numquam ducimus similique hic itaque.</p>
+    </div>
+
+    <div class="Container">
+        <h3>CSS Box Model, Margin And Padding head 3</h3>
+        <p id="ThirdClass">This is first paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim ad dolorem consectetur earum asperiores distinctio est, omnis minus dolores totam quae sed odio sit numquam ducimus similique hic itaque.</p>
+    </div>
+    
+</body>
+</html>

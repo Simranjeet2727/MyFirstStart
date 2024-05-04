@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #BorderP{
+           border-width: 4px;
+           border-color: blue;
+           border-style: solid;
+           border-radius: 10px; 
+           background-color: yellow;
+           /*OR*/
+           /* border: 4px solid green; */
+        }
+        #BackGroundP{
+            background-color: red;
+            /* height: 28px; */
+        }
+        .MyClass{
+            background-color: aquamarine;
+            width: 450px;
+            height: 50px;
+            border-top: 2px solid pink;
+            border-right: 2px solid rgb(215, 10, 44);
+            border-left: 2px solid rgb(20, 13, 168);
+            border-bottom: 2px solid rgb(14, 150, 30);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 32px;
+        }
+        #Para4{
+            height: 200px;
+            width: 650px;
+            background-image: url('https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/pages/signup_dec2023/soq24_bottom_illustration.svg');
+            border: 2px solid slateblue;
+            background-repeat: no-repeat;
+            /* background-position: center center; */
+            /* background-position: 10px 20px; */
+            background-position: center right;
+            /* background-position: center left; */
+            /* background-position: 10px top; */
+            /* background-position: bottom top; */
+            /* background-position: top center; */
+            /* background-repeat: repeat-x; 
+            background-repeat: repeat-y;  */
+            /* repeat image in x axis and repeat image by y axis */
+        }
+    </style>
+</head>
+<body>
+    <h3>Height, Width, Borders and backgrounds</h3>
+    <p id="BorderP">This is new paragraph for borders</p>
+    <p id="BackGroundP">This paragraph is for backgrounds</p>
+    <p class="MyClass">This combined paragraph for Height, Width, Borders and background </p>
+    <p id="Para4"> This is para four</p>
+</body>
+</html>
